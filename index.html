@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="https://formsubmit.co/forworkonly3004@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            
+            <!-- Hidden Fields -->
+            <input type="hidden" name="_subject" value="New Contact Form Submission!">
+            <input type="hidden" name="_captcha" value="false"> <!-- Disables Captcha -->
+            <input type="hidden" name="_next" value="thank-you.html"> <!-- Redirect after submission -->
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
